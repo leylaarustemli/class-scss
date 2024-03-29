@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "name": "new-folder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass assets/sass/main.scss -o assets/css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "description": ""
+}

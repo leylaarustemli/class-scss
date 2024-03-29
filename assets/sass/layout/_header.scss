@@ -1,0 +1,18 @@
+@import "../utils/variables";
+@import "../utils/extend";
+
+.head-one {
+    background-color: white;
+    padding: 10px;
+   .container{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    a{
+        color: black;
+    }
+   }
+}
