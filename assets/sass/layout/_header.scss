@@ -9,10 +9,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
     a{
         color: black;
     }
    }
+}
+.right-key{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+
+    .fa-user{
+        border-radius: 50%;
+        border: 1px solid $orange-color;
+        padding: 10px;
+        background-color: $orange-color;
+        color: white;
+        padding: 20px;
+    }
 }

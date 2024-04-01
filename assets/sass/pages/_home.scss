@@ -1,0 +1,310 @@
+@import "../utils/extend";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.section-one{
+    background-image: url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp");
+    position: relative;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.468);
+z-index: -1;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:150px;
+        gap: 25px;
+        
+        h1{
+            font-family: Poppins;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
+    font-size: 80px;
+}
+.one-paragraph{
+    font-size: 25px;
+    font-family: Jost, sans-serif;
+    color: white;
+    width: 750px;
+    text-align: center;
+    
+}
+        }
+    }
+    .four-button{
+        display: flex;
+       gap: 50px;
+       margin-top: 70px;
+      
+        .destinations{
+            display: flex;
+            border: 1px solid $orange-color;
+            color: $orange-color;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 25px 50px;
+            
+        }
+        .calendar{
+            display: flex;
+            border: 1px solid $orange-color;
+            color: $orange-color;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 25px 50px;
+        }
+        .type{
+            display: flex;
+            border: 1px solid $orange-color;
+            color: $orange-color;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 25px 50px;
+        }
+        .find-now{
+            display: flex;
+            border: 1px solid $orange-color;
+            color: $orange-color;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 25px 50px;
+            
+            a{
+                color: white;
+            }
+            
+        }
+    }
+.section-two{
+    padding: 70px 0;
+    .container{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .top-sctn{
+            display: flex;
+           justify-content: space-between;
+           padding: 40px 0;
+           width: 100%;
+           align-items: center;
+           .left-category{
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+           }
+           p{
+            color: $orange-color;
+            font-family: Satisfy, cursive;
+            font-size: $paragraphy-fontsize;
+           }
+           h2{
+            font-size: 40px;
+            color: $title-color;
+           }
+        }
+    }
+    .buttom-cards{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+        .card-footer{
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            p{
+                font-family: Playfair Display, serif;
+                font-size: 18px;
+                
+            }
+        }
+        .explore{
+            display: flex;
+            gap: 15px;
+            
+        }
+        .card-head{
+            overflow: hidden;
+           img{
+            width: 100%;
+            transition: 0.9s;
+           }
+           
+        }
+        .info-card{
+            display: flex;
+            gap: 40px;
+            i{
+                color: $orange-color;
+            }
+            .dollar{
+                color: $orange-color;
+            }
+            
+            .people{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            .clock{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            .from{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+        }
+        .btm-card{
+            width: 430px;
+            &:hover{
+                .skl{
+                    transform: scale(1.2);
+                    
+                }
+            }
+        }
+    }
+}
+.section-three{
+    background-color: #FFF4E2;
+    padding: 80px 0;
+
+    .container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        .top-hp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .five-picture{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            width: 100%;
+            margin-bottom: 50px;
+            .france{
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                img{
+                    border: 1px solid white;
+                    background-color: white;
+                    padding: 40px;
+                    transition: 0.6s;
+                }
+                .france-img{
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+                p{
+                    color: rgb(3,4,21);
+                }
+                .color-p{
+                    color: $orange-color;
+                }
+                
+            }
+        }
+        
+    }
+}
+.section-five{
+    background-image: url(https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/video-banner.webp);
+    padding: 170px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.356);
+        z-index: -1;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        gap: 15px;
+        font-family: Jost, sans-serif;
+        h2{
+            font-size: $h2-fontsize;
+        }
+        p{
+            font-size: 20px;
+            width: 600px;
+            text-align: center;
+        }
+        img{
+            border: 1px solid $orange-color;
+            border-radius: 50%;
+            background-color: $orange-color;
+            padding: 22px;
+        }
+    }
+}
+.section-six{
+    padding: 100px;
+   .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+   }
+   img{
+    border: 1px solid #fff;
+    --tw-shadow: 4px 3px 40px rgba(16, 33, 34, 0.06);
+    --tw-shadow-colored: 4px 3px 40px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background-color: #fff;
+    padding: 30px 65px;
+   }
+}
+.section-ten{
+    padding: 0 20px;
+    .container{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 20%;
+        }
+    }
+}
